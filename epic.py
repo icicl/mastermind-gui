@@ -2,7 +2,7 @@ import tkinter as tk
 import random
 window_availability_factor = .88#depending on how much space taskbar/window headings/etc take up from the screen, you may have to modify this
 SIZE = 40# how many pixels wide/tall each square is
-MAX_SIZE = 30
+MAX_SIZE = 40
 X = 0###how many
 Y = 10
 NUM_COLORS = 0
@@ -37,7 +37,6 @@ class Game(tk.Tk):
         self.alive = False
         self.won=True
     def redraw(self):
-#        if not self.alive:return
         for column in range(X):
             for row in range(Y):
                 x1 = column*SIZE
@@ -112,7 +111,6 @@ class AttemptsPicker(tk.Tk):
         if x >= 0 and x < min(36,int(self.winfo_screenheight()*.05)-5) and y == 0:
             global Y
             Y= x+5
-#            print(Y,(self.winfo_screenheight()*.9))
             SIZE = min(MAX_SIZE,int((self.winfo_screenheight()*.88)//(Y+2)))
             self.destroy()
             reset()
@@ -157,14 +155,6 @@ def reset():
     game = Game()
     game.redraw()
     game.mainloop()
-#vals = []
-#guesses = [[-1 for i in range(X)] for j in range(10)]
-#square = 0
-#tries = 0
 
 c__ = ["#ff0000","#ffff00","#44ff00","#00ffff","#0044ff","#cc00ff","#ffaaaa","#aaffbb"]
 ColorPicker()
-
-#game = Game()
-#game.redraw()
-#game.mainloop()
