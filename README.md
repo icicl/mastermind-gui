@@ -9,3 +9,14 @@ if the window is partially obscured, decrease `window_availability_factor` on li
 if you've never played mastermind, see https://en.wikipedia.org/wiki/Mastermind_(board_game) for rules.
 this version allows you to select the number of colors to use from 3 to 8, how many pegs the combination consistes of, and how many attempts you get (the original game uses 6, 4, and 10 respectively).
 to guess a combination simply click the squares at the bottom, and when the row is filled up, it will display small squares to the right of the row with black representing a guess that is in the correct spot and the correct color, and gray representing a guess that is the correct color, but the wrong position.
+
+### SCREENSHOTS
+**blank board**<br />
+![blank board](screenshots/blankgame.png?raw=true "blank board")
+<br /><br />
+**board during gameplay**<br />
+![gameplay](screenshots/playing.png?raw=true "gameplay")<br />
+![gameplay](screenshots/playing2.png?raw=true "gameplay")
+<br /><br />
+**board on win**<br />
+![win](screenshots/win.png?raw=true "on win")
