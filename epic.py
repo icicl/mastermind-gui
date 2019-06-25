@@ -23,7 +23,10 @@ class Game(tk.Tk):
         y = event.y // SIZE
         if x >= 0 and x < NUM_COLORS and y == Y+1:
             click(x)
-            self.redraw()
+            try:
+                self.redraw()
+            except:
+                0#suppress errors on premature exit
             if game_over() and not self.won:self.end()
         if x == NUM_COLORS and y == Y+1:
             undo()
