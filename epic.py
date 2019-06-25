@@ -157,4 +157,4 @@ def reset():
     game.mainloop()
 
 c__ = ["#ff0000","#ffff00","#44ff00","#00ffff","#0044ff","#cc00ff","#ffaaaa","#aaffbb"]
-ColorPicker()
+ColorPicker().mainloop()
